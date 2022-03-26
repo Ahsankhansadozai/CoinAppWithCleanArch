@@ -1,8 +1,8 @@
-package com.info.coinappwithcleanarch
+package com.info.coinappwithcleanarch.presentation.view
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.coinappwithcleanarch.R
+import com.info.coinappwithcleanarch.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
