@@ -1,5 +1,4 @@
 package com.info.coinappwithcleanarch.data.model
-
 import com.info.coinappwithcleanarch.data.cashed.roomdb.entity.CoinCashedItem
 
 data class CoinItem(

@@ -1,10 +1,12 @@
 package com.info.coinappwithcleanarch.data.cashed.roomdb.entity
 
 import androidx.room.Entity
+import androidx.room.PrimaryKey
 import com.info.coinappwithcleanarch.domain.model.CoinModel
 
-@Entity
+@Entity(tableName = "coins")
 data class CoinCashedItem(
+    @PrimaryKey(autoGenerate = false)
     val id: String,
     val is_active: Boolean,
     val is_new: Boolean,

@@ -10,9 +10,9 @@ import com.info.coinappwithcleanarch.data.cashed.roomdb.entity.CoinCashedItem
 interface CoinDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertCoin(): Long
+    suspend fun insertCoin(hCashedItem: CoinCashedItem): Long
 
-    @Query("SELECT * from CoinCashedItem")
-    suspend fun getAllCoins(): List<CoinCashedItem>
+    @Query("SELECT * from coins")
+    suspend fun hGetAllCashedCoins(): List<CoinCashedItem>
 
 }
